@@ -29,7 +29,7 @@ gulp.task("index", function(){
 /* copy node server to build folder */
 gulp.task("server",["express-server"], function () {
     console.log("Building server...");
-    return gulp.src(["package.json","app.js"])
+    return gulp.src(["package.json","app.js","server.js"])
         .pipe(gulp.dest("build"))
 });
 
