@@ -4,9 +4,9 @@ node_modules
 *.js.map
 npm-debug.log
 .vscode/**
-build/**
 !systemjs.config.js
 build/systemjs.config.js
 !typings/typings.d.ts
 !gulpfile.js
 !server.js
+build/**
