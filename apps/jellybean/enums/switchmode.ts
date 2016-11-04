@@ -1,0 +1,1 @@
+export enum SwitchMode {Never, Always, Random};
