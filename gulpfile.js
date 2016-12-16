@@ -61,6 +61,7 @@ gulp.task("libs", function () {
         'jquery/dist/jquery.min.js',
         'bootstrap/dist/js/bootstrap.min.js',
         'bootstrap/dist/css/bootstrap.min.css',
+        'bootstrap-social/**',
         'bootstrap/dist/fonts/**',
         'font-awesome/css/font-awesome.min.css',
         'font-awesome/fonts/**',

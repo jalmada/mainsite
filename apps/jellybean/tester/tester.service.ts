@@ -67,8 +67,8 @@ export class TesterService
     let deadPct : number = (this._deadCount/n) * 100;
 
     //Move to own method
-    let resultSummary = `Final Results: Alive: ${this._aliveCount} Dead: ${this._deadCount}`;
-    let percentages = `Percentages: Alive: ${alivePct}% Dead: ${deadPct}%`;
+    let resultSummary = `Final Results: Winner: ${this._aliveCount} Loser: ${this._deadCount}`;
+    let percentages = `Percentages: Winner: ${alivePct}% Loser: ${deadPct}%`;
     
     this._logger.log(resultSummary);
     this._logger.log(percentages);

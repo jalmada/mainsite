@@ -29,7 +29,7 @@ export class Test
         }
 
         this._log.push(`Player selects: ${+(whichJellybean+1)}`);
-        this._log.push(`Host selects: ${+(hostSelection+1)} is poisoned`);
+        this._log.push(`Host says ${+(hostSelection+1)} is a losing door`);
 
 
         //0 = No swtich
@@ -49,11 +49,11 @@ export class Test
         }
 
         let finalJellybean = this._jellybeans[newJellybean];
-        let playerStatus = finalJellybean.isPoisonous ? "Dead" : "Alive";
+        let playerStatus = finalJellybean.isPoisonous ? "Loses" : "Wins";
         let playerSwitch = switchJellybean ? "switches to" : "not switches";
 
         this._log.push(`Player ${playerSwitch}: ${+(newJellybean+1)}`);
-        this._log.push(`Player is ${playerStatus}`);
+        this._log.push(`Player ${playerStatus}`);
         
 
         this._result = finalJellybean.isPoisonous;

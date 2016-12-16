@@ -10,3 +10,7 @@ build/systemjs.config.js
 !gulpfile.js
 !server.js
 build/**
+xaratustra-aws-credentials
+aws notes
+josealmadame-keys.pem
+misc/**
