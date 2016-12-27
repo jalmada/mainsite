@@ -44,6 +44,11 @@ gulp.task("views", function(){
         .pipe(gulp.dest("build/views"));
 });
 
+gulp.task("images", function(){
+    return gulp.src(["images/**"])
+        .pipe(gulp.dest("build/images"));
+});
+
 gulp.task("express-server", function(){
     return gulp.src(["server/**"])
         .pipe(gulp.dest("build/server"));
@@ -68,7 +73,7 @@ gulp.task("libs", function () {
         '@angular/**',
         'rxjs/**',
         'express/**',
-        'ejs/**'    
+        'ejs/**'
     ], { cwd: "node_modules/**" }) /* Glob required here. */
         .pipe(gulp.dest("build/node_modules"));
 });
